@@ -1,16 +1,37 @@
-# Build Applications with GitHub Copilot Agent Mode
+# OctoFit Tracker App
 
-<img src="https://octodex.github.com/images/Professortocat_v2.png" align="right" height="200px" />
+This repository contains the scaffold for the OctoFit Tracker App.
 
-Hey chmorera!
+Quick setup (macOS / Linux)
 
-Mona here. I'm done preparing your exercise. Hope you enjoy! 💚
+1. Make sure you're on the `build-octofit-app` branch:
+   - git fetch origin
+   - git checkout -b build-octofit-app origin/build-octofit-app
+     (or if the branch exists locally: `git checkout build-octofit-app`)
 
-Remember, it's self-paced so feel free to take a break! ☕️
+2. Create a Python 3 virtual environment:
+   - python3 -m venv .venv
 
-[![](https://img.shields.io/badge/Go%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/chmorera/skills-build-applications-w-copilot-agent-mode/issues/1)
+3. Activate the virtual environment:
+   - source .venv/bin/activate
 
----
+4. Upgrade pip and install requirements:
+   - pip install --upgrade pip
+   - pip install -r requirements.txt
 
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+5. Run the app:
+   - python -m octofit.main
+   - Visit http://localhost:5000/
 
+Windows (PowerShell)
+1. python -m venv .venv
+2. .\.venv\Scripts\Activate.ps1
+3. pip install -r requirements.txt
+4. python -m octofit.main
+
+Files added by this scaffold:
+- requirements.txt
+- octofit/main.py (simple Flask app)
+- octofit/__init__.py
+- scripts/setup_env.sh (creates venv and installs requirements)
+- .gitignore
